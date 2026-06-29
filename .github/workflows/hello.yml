@@ -1,0 +1,16 @@
+# Workflow : should have name
+# JOBS : should have inside the workflow
+#on tells when the workflow run
+# job tells what the workflow should be
+name: Hello
+
+on:  
+  workflow_dispatch:
+
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: say Hello to everyone
+        run: echo "Hello dosto"
